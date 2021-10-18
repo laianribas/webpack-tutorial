@@ -30,19 +30,19 @@ module.exports = {
         use: ['babel-loader'],
       },
       //imagens
-      {
+       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
       },
       //fonts and svg
       {
-        test: /.(woff(2)?|eot|ttf|otf|svg|)$/,
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
-      },
+      }, 
       {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-      },
+      }, 
     ],
   },
 }
